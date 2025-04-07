@@ -21,6 +21,4 @@ W - bank written
 
 V - bank verified correctly
 
-* - bank tested
-
 = - bank formatted
