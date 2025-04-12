@@ -58,7 +58,6 @@ XOR		:64 dta $00
 TITLE	:32	dta d' '
 ;----------------
 BAR		dta d' dcart flasher  '*
-PREPARE	dta d'Prepare:                        '
 READY	dta d'Ready:                          '
 		dta d'Ready:                SST39SF040'
 SCANING	dta d'Scan:                           '
@@ -73,6 +72,8 @@ FORMATG	dta d'Format:                         '
 		dta d'Format:               SST39SF040'
 DONEMSG	dta d'Done:                           '
 		dta d'Done:                 SST39SF040'	
+PREPARE	dta d'Prepare:                        '
+		dta d'                                '
 ;----------------
 KEYS	dta $48, d' Help '*, $C8, d' - Scan banks           '
 		dta $48, d'Start '*, $C8, d' - Full flash           '
