@@ -172,6 +172,12 @@ SETPLCO	sta COLPM0S
 		sta COLPM1S
 		sta COLPM2S
 		sta COLPM3S
+		lda #$41
+@		cmp VCOUNT
+		bne @-
+		lda #$40
+@		cmp VCOUNT
+		bne @-
 		rts
 ;----------------
 SHOWMSG	stx MSG+1
