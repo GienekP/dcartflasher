@@ -4,7 +4,9 @@ use:
 
    dcartflasher title file.bin flasher.xex
    
-   dcartflasher title file.car flasher.xex
+   dcartflasher file.car flasher.xex
+   
+   dcartflasher file.car
 
 
 Bank map legend:
