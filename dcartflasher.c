@@ -153,6 +153,16 @@ int main( int argc, char* argv[] )
 	printf("DCart Flasher - ver: %s\n",__DATE__);
 	switch (argc)
 	{
+		case 2:
+		{
+			flashBuilder(argv[1],argv[1],"FLASHER.XEX");
+
+		} break;
+		case 3:
+		{
+			flashBuilder(argv[1],argv[1],argv[2]);
+
+		} break;
 		case 4:
 		{
 			flashBuilder(argv[1],argv[2],argv[3]);
@@ -162,6 +172,8 @@ int main( int argc, char* argv[] )
 		{
 			printf("(c) GienekP\n");
 			printf("use:\ndcartflasher title file.bincar flasher.xex\n");
+			printf("dcartflasher file.bincar flasher.xex\n");
+			printf("dcartflasher file.bincar\n");
 		} break;
 	};
 	return 0;
