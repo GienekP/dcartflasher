@@ -537,6 +537,8 @@ FLASHCM	lda #$37
 ;--------
 SAVELP	ldy #$00
 @		lda (TMP+2),y
+		cmp #$FF
+		beq FFBYTE
 		pha
 ;--------
 		lda #$AA
@@ -558,7 +560,7 @@ SAVELP	ldy #$00
 		sta WSYNC
 		sta WSYNC
 ;--------
-		iny
+FFBYTE	iny
 		bne @-
 		inc TMP+3
 		inc TMP+1
